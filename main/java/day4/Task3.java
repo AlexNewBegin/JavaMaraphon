@@ -18,10 +18,10 @@ public class Task3 {
         for (int x = 0; x < matrice.length; x++) {
             int sum = 0;
             for (int y = 0; y < matrice[x].length; y++) {
-                sum = sum + matrice[x][y];
+                sum += matrice[x][y];
             }
             System.out.println("Сумма в строке " + x + " = " + sum);
-            if (sum > sumMax ) {
+            if (sum >= sumMax ) {
                 sumMax = sum;
                 index = x;
             }

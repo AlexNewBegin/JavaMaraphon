@@ -10,8 +10,8 @@ public class Task2 {
         for ( int i = 0; i < 100; i++){
             array[i] = rnd.nextInt(10000);
         }
-        int max = array[0];
-        int min = array[0];
+        int max = 0;
+        int min = 10000;
         int numzero = 0;
         int sumZero = 0;
         for ( int num: array){
@@ -19,7 +19,7 @@ public class Task2 {
             if ( num < min) min = num;
             if (num%10 == 0) {
                 numzero++;
-                sumZero = sumZero + num;
+                sumZero += num;
             }
         }
         System.out.println(Arrays.toString(array));

@@ -27,7 +27,7 @@ public class Task1 {
             if (num == 1) one ++;
             if (num%2 == 0) evenInt++;
             if (num%2 !=0) oddInt++;
-            sum = sum + num;
+            sum += num;
         }
         System.out.println("Количество чисел больше 8: " + eight);
         System.out.println("Количество чисел равных 1: " + one);
